@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    >div {
+        width: 380px;
+        height: 230px;
+        overflow: hidden;
+        float: left;
+        >ul {
+            width: 380px;
+            height: 230*5px;
+            >li {
+                overflow: hidden;
+            }
+        }
+    }
+    >ul {
+        float: left;
+        width: 180px;
+        height: 230px;
+        >li {
+            width: 180px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            background: url(../img/ui.png) no-repeat 0 -182px;
+        }
+    }
+}
