@@ -7,28 +7,52 @@
 img {
   width: 100%;
 }
-section > div {
+div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+div > section {
+  margin: auto;
+}
+div > section > div {
   width: 380px;
   height: 230px;
   overflow: hidden;
   float: left;
+  position: relative;
 }
-section > div > ul {
+div > section > div > ul {
   width: 380px;
   height: 1150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
 }
-section > div > ul > li {
+div > section > div > ul > li {
+  width: 380px;
+  height: 230px;
   overflow: hidden;
 }
-section > ul {
+div > section > ul {
   float: left;
   width: 180px;
-  height: 230px;
+  height: 225px;
+  padding-top: 5px;
+  background: #333333;
 }
-section > ul > li {
+div > section > ul > li {
   width: 180px;
   height: 44px;
   line-height: 44px;
   text-align: center;
   background: url(../img/ui.png) no-repeat 0 -182px;
+}
+div > section > ul > li:nth-child(1) {
+  background: url(../img/ui.png) no-repeat 0 -139px;
+}
+div > section > ul > li > a {
+  color: #fff;
+  text-decoration: none;
 }

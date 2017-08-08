@@ -9,30 +9,53 @@ img {
     width: 100%;
 }
 
-section {
-    >div {
-        width: 380px;
-        height: 230px;
-        overflow: hidden;
-        float: left;
-        >ul {
+div {
+    width: 100vw;
+    
+    height: 100vh;
+    display: flex;
+    >section {
+        margin: auto;
+        >div {
             width: 380px;
-            height: 230*5px;
-            >li {
-                overflow: hidden;
+            height: 230px;
+            overflow: hidden;
+            float: left;
+            position: relative;
+            >ul {
+                width: 380px;
+                height: 230*5px;
+                position: absolute;
+                left: 0;
+                top:0;
+                transition: 1s;
+                >li {
+                    width: 380px;
+                    height: 230px;
+                    overflow: hidden;                 
+                }
             }
         }
-    }
-    >ul {
-        float: left;
-        width: 180px;
-        height: 230px;
-        >li {
+        >ul {
+            float: left;
             width: 180px;
-            height: 44px;
-            line-height: 44px;
-            text-align: center;
-            background: url(../img/ui.png) no-repeat 0 -182px;
+            height: 225px;
+            padding-top: 5px;
+            background: #333333;
+            >li {
+                width: 180px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                background: url(../img/ui.png) no-repeat 0 -182px;
+                &:nth-child(1){
+                    background: url(../img/ui.png) no-repeat 0 -139px;
+                }
+                >a{
+                    color: #fff;
+                    text-decoration:none
+                }
+            }
         }
     }
 }
